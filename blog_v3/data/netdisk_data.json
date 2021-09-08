@@ -1,0 +1,50 @@
+[
+	{
+        "title": "超星网盘",
+		"inner_name":"pan-yz.chaoxing.com",
+		"icon":"https://www.chaoxing.com/images/logo.png",
+        "type": "link",
+		"newtab":true,
+        "url": "http://pan-yz.chaoxing.com/"
+    },
+	{
+        "title": "岱岱2017-2019.rar",
+		"inner_name":"大小: 493 MB",
+        "type": "file",
+		"newtab":true,
+        "url": "http://pan-yz.chaoxing.com/download/downloadfile?fleid=596286480364855296&puid=144353614"
+    },
+    {
+        "title": "南方公园",
+        "source": [
+            "https://kbtxwer.gitee.io/southpark/list.json"
+        ],
+		"icon":"https://img-blog.csdnimg.cn/2020040617400786.png",
+        "inner_name": "The South Park",
+        "type": "root"
+    },
+	{
+        "title": "康哥万词班",
+        "source": [
+            "https://kbtxwer.gitee.io/20000words/list.json"
+        ],
+        "inner_name": "20000 words",
+        "type": "root"
+    },
+	{
+        "title": "21 考研",
+        "source": [
+            "https://kbtxwer.gitee.io/21kaoyan/list.json"
+        ],
+        "inner_name": "21 kaoyan",
+        "type": "root"
+    },
+	{
+        "title": "觉醒年代",
+        "source": [
+            "https://kbtxwer.gitee.io/jxnd/list.json"
+        ],
+        "inner_name": "Age of Awakening",
+        "type": "root"
+    }
+]
