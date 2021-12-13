@@ -1,1 +1,1 @@
-{"wxac":{"app_version":20211202,"description":"修复由微信改版导致无法读取下载时间戳的问题","link":"https://www.52pojie.cn/thread-1479756-1-1.html"}}
+{"wxac":{"app_version":20211213,"description":"新增参数：-keep 表示保留未购买的付费文章，不加此参数未购买的付费文章不会被保存到本地，防止覆盖从他人处获取的已购文章","link":"https://www.52pojie.cn/thread-1479756-1-1.html"}}
