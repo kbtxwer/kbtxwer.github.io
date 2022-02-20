@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>唤醒中转页面</title>
+		<script>
+			let url = unescape(window.location.search.substring(5)).replace('http://','https://')
+			console.log(url)
+			//https://ke.qq.com/webcourse/894089/100992659#from=800021724&lite=1&live=1
+			//https://m.ke.qq.com/m-core/live.html?_bid=167&_wv=2147487745&cid=894089&term_id=100992659#stay_hash=2849599148-5253677011805321
+			if(url.startsWith('https://ke.qq.com') || url.startsWith('https://m.ke.qq.com')){
+				window.location.href = url
+			}
+		</script>
+	</head>
+
+	<body>
+		<form action='' method='GET'>
+			<input placeholder='请粘贴课堂链接，然后敲回车跳转' onkeypress='test' name='url' width='80%'/>
+		</form>
+	</body>
+</html>
