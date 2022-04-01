@@ -1,0 +1,49 @@
+<script>
+	let data_xhr = new XMLHttpRequest()
+	let data = ''
+	data_xhr.open('GET','https://kbtxwer.gitee.io/blog_v3/data/root_file_data.json')
+	data_xhr.send()
+	data_xhr.onreadystatechange = function(){
+		if(data_xhr.readyState == 4 && data_xhr.status == 200){
+			 data = JSON.parse(data_xhr.responseText)
+			 processData(data)
+		}
+	}
+	function processData(data){
+		let path='maogeshijue'
+		let id=0
+		if(window.location.search.length){
+		let param = window.location.search.substring(1).split('&')
+			param.forEach((item,index)=>{
+				let kv = item.split('=')
+				let key = kv[0]
+				let value = kv[1]
+				if(key==='path'){
+					path = value
+				}
+				if(key==='id'){
+					id = value-1
+				}
+			})
+		}
+		console.log(data)
+		data.forEach((item,index)=>{
+			if(path.indexOf(item.inner_name)!==-1 || item.inner_name.indexOf(path)!==-1){
+				let baseUrl = (item.source[0].indexOf('http')==0?item.source[0]:('https://kbtxwer.gitee.io/' + item.source[0])) 
+								+ '/' + item.inner_name + '/'
+				let jsonUrl = baseUrl + 'json_utf8'
+				console.log(baseUrl)
+				data_xhr.open('GET',jsonUrl)
+				data_xhr.send()
+				data_xhr.onreadystatechange = function(){
+					if(data_xhr.readyState == 4 && data_xhr.status == 200){
+						 let data_ = JSON.parse(data_xhr.responseText)
+						 let art_url = baseUrl + data_.article[id].name
+						 window.location.href = art_url
+					}
+				}
+			}
+		})
+	}
+</script>
+正在跳转，请等待
