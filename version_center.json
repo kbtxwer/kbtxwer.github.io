@@ -1,1 +1,1 @@
-{"wxac":{"app_version":20220329,"description":"单篇文章下载不再考虑从网页中获取发文时间(直接用系统时间当发布时间吧，我实在是懒得再找正则了，你们腾讯这帮人是不是整天加班闲的没事干，乱改格式干啥？);修复微信改版导致的样式异常和留言无法渲染等问题(腾讯真是让人烦)","link":"https://www.52pojie.cn/thread-1479756-1-1.html"}}
+{"wxac":{"app_version":20220423,"description":"新增参数 -updc 用于更新文章评论","link":"https://www.52pojie.cn/thread-1479756-1-1.html"}}
