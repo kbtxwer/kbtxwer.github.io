@@ -1,18 +1,27 @@
 [
     {
         "name": "全新英语听力·四年级（基础版）",
-        "url": "https://app.ecnupress.com.cn/app/dt/bi/1479187947/24591-8168285c4581b3?s=1"
+        "url": "https://app.ecnupress.com.cn/app/dt/bi/1479187947/24591-8168285c4581b3?s=1",
+        "type": "study"
     },
     {
         "name": "小学语文",
-        "url": "https://mp.weixin.qq.com/s/18_VLqr8afZUsq0YghehVA"
+        "url": "https://mp.weixin.qq.com/s/18_VLqr8afZUsq0YghehVA",
+        "type": "study"
     },
     {
         "name":"英语假期听力",
-        "url":"https://mp.weixin.qq.com/mp/homepage?search_click_id=1788567792711217961-1642243264814-402025&__biz=MzA5NzI3MDM1Nw==&hid=2"
+        "url":"https://mp.weixin.qq.com/mp/homepage?search_click_id=1788567792711217961-1642243264814-402025&__biz=MzA5NzI3MDM1Nw==&hid=2",
+        "type": "study"
     },
     {
         "name": "更多资料",
-        "url": "https://mp.weixin.qq.com/mp/homepage?__biz=MzI2MTIxOTUxMg==&hid=10&sn=8e3d219408e8a627efef703f15adaa59&scene=18#wechat_redirect"
+        "url": "https://mp.weixin.qq.com/mp/homepage?__biz=MzI2MTIxOTUxMg==&hid=10&sn=8e3d219408e8a627efef703f15adaa59&scene=18#wechat_redirect",
+        "type": "study"
+    },
+    {
+        "name": "小林家的龙女仆",
+        "url": "http://kbtxwer.gitee.io/netdisk/kbtx_public/%E7%94%B5%E5%BD%B1/%E5%B0%8F%E6%9E%97%E5%AE%B6%E7%9A%84%E9%BE%99%E5%A5%B3%E4%BB%86",
+        "type": "entertainment"
     }
 ]
