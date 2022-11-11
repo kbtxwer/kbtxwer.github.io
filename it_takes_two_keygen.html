@@ -1,0 +1,36 @@
+<script>
+	function gen_key(code,displayer){
+		let replace_table = [
+			['Q','0'],['e','1'],['t','2'],['Y','3'],
+			['U','4'],['i','5'],['A','6'],['f','7'],
+			['H','8'],['k','9'],['z','A'],['C','B'],
+			['n','C'],['G','D'],['d','E'],['S','F']
+		]
+		let enc_code = code;
+		replace_table.forEach((item)=>{
+			enc_code = enc_code.replaceAll(item[0],item[1])
+		})
+		console.log(enc_code)
+		let compound_table = [
+			[0,7],[1,6],[2,5],[3,4],
+			[4,5],[5,6],[6,7],[7,0]
+		]
+		let key=''
+		compound_table.forEach((item)=>{
+			let num = parseInt(enc_code[item[0]],16) + parseInt(enc_code[item[1]],16)
+			key += num.toString(16).toLocaleUpperCase()
+		})	
+		if(displayer){
+			console.log(displayer)
+			displayer.innerText = key
+		}else{
+			alert(key)
+		}
+	}
+</script>
+<body>
+	<input id='code' value='iStdfGYHeQ'>
+	<button value="calc" onclick="gen_key(document.getElementById('code').value,document.getElementById('generted_key'))">generate</button>
+	<br>
+	<p id='generted_key'></p>
+</body>
