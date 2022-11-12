@@ -10,7 +10,7 @@
 		replace_table.forEach((item)=>{
 			enc_code = enc_code.replaceAll(item[0],item[1])
 		})
-		console.log(enc_code)
+		//console.log(enc_code)
 		let compound_table = [
 			[0,7],[1,6],[2,5],[3,4],
 			[4,5],[5,6],[6,7],[7,0]
@@ -21,7 +21,7 @@
 			key += num.toString(16).toLocaleUpperCase()
 		})	
 		if(displayer){
-			console.log(displayer)
+			//console.log(displayer)
 			displayer.innerText = key
 		}else{
 			alert(key)
